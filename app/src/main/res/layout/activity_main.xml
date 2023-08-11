@@ -21,6 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
     
     <TextView
+        android:id="@+id/tvScoreTeamA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="80sp"
@@ -30,6 +31,27 @@
         app:layout_constraintStart_toStartOf="@id/textViewTeamA"
         app:layout_constraintEnd_toEndOf="@+id/textViewTeamA"
         app:layout_constraintTop_toBottomOf="@id/textViewTeamA"/>
-
+    <Button
+        android:id="@+id/btnPlusTeamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="@id/tvScoreTeamA"
+        app:layout_constraintEnd_toEndOf="@id/tvScoreTeamA"
+        app:layout_constraintTop_toBottomOf="@id/tvScoreTeamA"/>
+    <Button
+        android:id="@+id/btnMinusTeamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-1"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/btnPlusTeamA"
+        app:layout_constraintEnd_toEndOf="@id/btnPlusTeamA"
+        app:layout_constraintTop_toBottomOf="@id/btnPlusTeamA"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
